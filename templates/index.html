@@ -5,15 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MausamVibe</title>
-  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-  {% if exception_occured %}
-    style = "background-image: url('https://images.pexels.com/photos/29008778/pexels-photo-29008778/free-photo-of-starry-night-above-snowy-mountains-in-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
-  
-  {% else %}
-    style = "background-image: url('{{ city_image_url }}');"
-  {% endif %}
 
   <div class="container">
     <h1>MausamVibe</h1>
@@ -27,7 +22,7 @@
 
     {% if error %}
       <p style="text-align: center; color: red; font-weight: bold;">{{ error }}</p>
-    {% else %}
+    {% elif temp %}
       <div class="weather">
         <!-- Left Side: Temperature & City Name -->
         <div class="left">
@@ -56,9 +51,10 @@
       </div>
     {% endif %}
   </div>
+
   {% if exception_occured %}
   <script>
-    windows.onload = function() {
+    window.onload = function() {
       alert("{{ exception_message }}");
     }
   </script>
