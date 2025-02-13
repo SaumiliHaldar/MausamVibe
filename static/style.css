@@ -23,6 +23,8 @@ body {
   background-image: url("https://images.pexels.com/photos/29008778/pexels-photo-29008778/free-photo-of-starry-night-above-snowy-mountains-in-spain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   margin: 0;
 }
 
