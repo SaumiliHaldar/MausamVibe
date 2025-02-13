@@ -118,6 +118,7 @@ input::placeholder {
 
 .right img {
   height: 80px;
+  width: 80px;
 }
 
 /* Responsive Design */
@@ -152,6 +153,7 @@ input::placeholder {
 
   .right img {
     height: 60px;
+    width: 60px;
   }
 
   form {
