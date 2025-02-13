@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Exit on error
 set -o errexit
 
 # Install dependencies
@@ -7,6 +6,10 @@ pip install -r requirements.txt
 
 # Collect static files
 python manage.py collectstatic --no-input
+
+# Ensure that static files are collected
+echo "Checking collected static files:"
+ls -la staticfiles/  # Check if the files are present in the staticfiles directory
 
 # Run migrations
 python manage.py migrate --no-input
