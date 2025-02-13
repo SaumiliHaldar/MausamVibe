@@ -33,7 +33,6 @@ MausamVibe aims to offer users an intuitive platform for checking current weathe
 - **HTML/CSS**: For front-end design and layout.
 - **JavaScript**: For interactive elements like dynamic weather updates.
 - **OpenWeatherMap API**: Provides real-time weather data.
-- **Bootstrap**: For responsive and mobile-first design.
 
 ## Installation
 
